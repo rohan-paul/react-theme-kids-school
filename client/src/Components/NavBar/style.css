@@ -1,16 +1,17 @@
 #mainNav {
     border-color: rgba(34, 34, 34, 0.05);
     background-color: white;
-    -webkit-transition: all .35s;
-    transition: all .35s;
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
     font-weight: 200;
     letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
     color: #fdcc52;
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
     font-weight: 200;
     letter-spacing: 1px;
 }
@@ -28,7 +29,7 @@
 
 #mainNav .navbar-nav>li>a {
     font-size: 11px;
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: "Lato", "Helvetica", "Arial", "sans-serif";
     letter-spacing: 2px;
     text-transform: uppercase;
 }

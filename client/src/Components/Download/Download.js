@@ -11,11 +11,10 @@ export class Download extends Component {
           <div className="row">
             <div className="col-md-8 mx-auto">
               <h2 className="section-heading">
-                Discover the buzz around our school
+                Explore out school in more details!
               </h2>
               <p>
-                We also have our school's app available on any mobile device!
-                Download now to get started!
+                Download out school's app from your mobile app to get started!
               </p>
               <div className="badges">
                 <a className="badge-link" href="#">
@@ -34,3 +33,5 @@ export class Download extends Component {
 }
 
 export default Download;
+
+//

@@ -35,14 +35,10 @@ export class NavBar extends Component {
   };
 
   toggleShow = () => {
-    this.setState(
-      {
-        menuShow: !this.state.menuShow
-      },
-      () => {
-        console.log("VALUE OF MENU SHOW IS ", this.state.menuShow);
-      }
-    );
+    console.log("TOGGLLING");
+    this.setState({
+      menuShow: !this.state.menuShow
+    });
   };
 
   closeMenu = () => {
@@ -57,7 +53,7 @@ export class NavBar extends Component {
     const show = this.state.menuShow ? "show" : "";
     return (
       <nav
-        className={`navbar navbar-expand-lg navbar-light fixed-top ${
+        className={`"navbar navbar-expand-lg navbar-light fixed-top" ${
           this.props.navBarShrink
         }`}
         id="mainNav"
@@ -70,7 +66,6 @@ export class NavBar extends Component {
           >
             Top of Schoole Homepage
           </a>
-          {console.log("NAV BAR SHRINK IS ", this.props.navBarShrink)}
           <button
             onClick={this.toggleShow.bind(this)}
             className="navbar-toggler navbar-toggler-right"
