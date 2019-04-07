@@ -1,0 +1,103 @@
+#mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: white;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+    color: #fdcc52;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+    color: #fcbd20;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: #222222;
+}
+
+#mainNav .navbar-nav>li>a {
+    font-size: 11px;
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#mainNav .navbar-nav>li>a.active {
+    color: #fdcc52 !important;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a.active:hover {
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a,
+#mainNav .navbar-nav>li>a:focus {
+    color: #222222;
+}
+
+#mainNav .navbar-nav>li>a:hover,
+#mainNav .navbar-nav>li>a:focus:hover {
+    color: #fdcc52;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+    #mainNav .navbar-brand {
+        color: fade(white, 70%);
+    }
+
+    #mainNav .navbar-brand:hover,
+    #mainNav .navbar-brand:focus {
+        color: white;
+    }
+
+    #mainNav .navbar-nav>li>a,
+    #mainNav .navbar-nav>li>a:focus {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #mainNav .navbar-nav>li>a:hover,
+    #mainNav .navbar-nav>li>a:focus:hover {
+        color: white;
+    }
+
+    #mainNav.navbar-shrink {
+        border-color: rgba(34, 34, 34, 0.1);
+        background-color: white;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #222222;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand:hover,
+    #mainNav.navbar-shrink .navbar-brand:focus {
+        color: #fdcc52;
+    }
+
+    #mainNav.navbar-shrink .navbar-nav>li>a,
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus {
+        color: #222222;
+    }
+
+    #mainNav.navbar-shrink .navbar-nav>li>a:hover,
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover {
+        color: #fdcc52;
+    }
+}
