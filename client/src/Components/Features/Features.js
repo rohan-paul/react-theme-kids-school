@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import "simple-line-icons/css/simple-line-icons.css";
-import demoScreen1 from "../../Assets/Images/demo-screen-1.jpg";
+import demoScreen1 from "../../Assets/Images/sunset.png";
 
 export class Features extends Component {
   render() {
@@ -16,22 +16,11 @@ export class Features extends Component {
             <hr />
           </div>
           <div className="row">
-            <div className="col-lg-4 my-auto">
-              <div className="device-container">
-                <div className="device-mockup iphone6_plus portrait white">
-                  <div className="device">
-                    <div className="screen">
-                      {/* Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! */}
-                      <img src={demoScreen1} className="img-fluid" alt="" />
-                    </div>
-                    <div className="button">
-                      {/* You can hook the "home button" to some JavaScript events or just remove it */}
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="col-lg-5 my-auto">
+              <img src={demoScreen1} className="img-fluid" alt="" />
             </div>
-            <div className="col-lg-8 my-auto">
+            <div className="button" />
+            <div className="col-lg-7 my-auto">
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-lg-6">

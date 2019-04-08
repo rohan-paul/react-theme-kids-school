@@ -5,6 +5,7 @@ import "./App.css";
 import history from "./history";
 import { Route, BrowserRouter, Switch, Router, Link } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
+import TopSection from "./Components/TopSection/TopSection";
 import Download from "./Components/Download/Download";
 import Features from "./Components/Features/Features";
 import NotFound from "./Components/NotFound/NotFound";
@@ -55,6 +56,7 @@ class App extends Component {
                   render={props => (
                     <div>
                       <NavBar navBarShrink={this.state.navBarShrink} />
+                      <TopSection />
                       <Download />
                       <Features />
                     </div>

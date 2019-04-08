@@ -30,6 +30,7 @@ section.download .badges .badge-link img {
 
 @media (min-width: 768px) {
     section.download h2 {
-        font-size: 70px;
+        font-size: 50px;
+        font-weight: 200
     }
 }

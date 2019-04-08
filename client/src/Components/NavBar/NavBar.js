@@ -68,9 +68,8 @@ export class NavBar extends Component {
             className="navbar-brand js-scroll-trigger"
             href="#page-top"
           >
-            Top of Schoole Homepage
+            School Homepage Section
           </a>
-          {console.log("NAV BAR SHRINK IS ", this.props.navBarShrink)}
           <button
             onClick={this.toggleShow.bind(this)}
             className="navbar-toggler navbar-toggler-right"

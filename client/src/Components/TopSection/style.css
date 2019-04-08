@@ -1,0 +1,61 @@
+header.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: url("../../Assets/Images/color.svg"), #96fa5d;
+    background: url("../../Assets/Images/color.svg"),
+        -webkit-gradient(linear, right top, left top, from(#96fa5d), to(#dc2430));
+    background: url("../../Assets/Images/color.svg"),
+        linear-gradient(to left, #96fa5d, #dc2430);
+}
+
+header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+header.masthead .header-content h1 {
+    font-size: 30px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f7cb09;
+    border-color: #285e8e;
+    -webkit-box-shadow: 0px 50px 0 0px #e6d00e inset, 0px -50px 0 0px #f0d90c inset;
+}
+
+header.masthead .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header.masthead .device-container .screen img {
+    border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 775px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header.masthead .header-content {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    header.masthead .header-content h1 {
+        font-size: 50px;
+    }
+
+    header.masthead .device-container {
+        max-width: 325px;
+    }
+}
