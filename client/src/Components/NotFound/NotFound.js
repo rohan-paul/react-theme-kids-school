@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./NotFound.css";
 
 export default class NotFound extends Component {
@@ -17,14 +18,9 @@ export default class NotFound extends Component {
             <div className="navbar-links">
               <ul>
                 <li>
-                  <a
-                    href="/dashboard/imports"
-                    rel="noopener noreferrer"
-                    className="btn-request"
-                    //target="_blank"
-                  >
+                  <Link className="btn-request" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -36,14 +32,9 @@ export default class NotFound extends Component {
               width="300px"
               alt=""
             />
-            <a
-              href="/dashboard/imports"
-              rel="noopener noreferrer"
-              className="btn-go-home"
-              //target="_blank"
-            >
-              GO BACK HOME
-            </a>
+            <Link className="btn-request" to="/">
+              Return to Home Page
+            </Link>
           </div>
           <div className="objects">
             <img
