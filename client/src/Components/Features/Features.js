@@ -9,7 +9,7 @@ export class Features extends Component {
       <section className="features" id="features">
         <div className="container">
           <div className="section-heading text-center">
-            <h2>Unlimited Features, Unlimited Fun</h2>
+            <h2>Lots of Learning with Plenty of Fun</h2>
             <p className="text-muted">
               Check out what you can do with this app theme!
             </p>

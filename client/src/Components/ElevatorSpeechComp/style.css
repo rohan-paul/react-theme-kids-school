@@ -1,0 +1,49 @@
+/* Two doted selector without separation means  - elements that has both 'section' and 'cta' eg: class="section cts" */
+section.cta {
+    position: relative;
+    padding: 250px 0;
+    background-image: url("../../Assets/Images/bg-cta.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Two doted selector separated by space
+.outside .inside
+means element with .inside class descended from an element with class .outside
+*/
+section.cta .cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+section.cta .cta-content h2 {
+    font-size: 50px;
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    section.cta .cta-content h2 {
+        font-size: 80px;
+    }
+}
+
+section.cta .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+What does a space mean in a CSS selector? i.e. What is the difference between .classA.classB and .classA .classB ? -
+
+.classA.classB refers to an element that has both classes A and B (class="classA classB"); whereas .classA .classB refers to an element with class="classB" descended from an element with class="classA".
+*/

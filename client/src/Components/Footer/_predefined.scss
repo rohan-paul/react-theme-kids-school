@@ -1,0 +1,15 @@
+.section-gap {
+    padding: 120px 0;
+
+    @media (max-width: 991px) {
+        padding: 60px 0px;
+    }
+}
+
+.gradient-bg {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-bg-reverse {
+    @include gradient(270deg, $primary-color 0%, $primary-color2 100%);
+}

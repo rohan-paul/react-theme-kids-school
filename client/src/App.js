@@ -8,7 +8,9 @@ import NavBar from "./Components/NavBar/NavBar";
 import TopSection from "./Components/TopSection/TopSection";
 import Download from "./Components/Download/Download";
 import Features from "./Components/Features/Features";
+import { ElevatorSpeechComp } from "./Components/ElevatorSpeechComp/ElevatorSpeechComp";
 import NotFound from "./Components/NotFound/NotFound";
+import Footer from "./Components/Footer/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 library.add(faBars, faMobileAlt);
@@ -57,8 +59,10 @@ class App extends Component {
                     <div>
                       <NavBar navBarShrink={this.state.navBarShrink} />
                       <TopSection />
-                      <Download />
                       <Features />
+                      <ElevatorSpeechComp />
+                      <Download />
+                      <Footer />
                     </div>
                   )}
                 />

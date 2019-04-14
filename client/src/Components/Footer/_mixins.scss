@@ -1,0 +1,101 @@
+//    Mixins
+
+@mixin transition($args: all 0.3s ease 0s) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+
+
+@mixin placeholder {
+    &.placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin gradient($deg, $args1, $args2) {
+    background: -webkit-linear-gradient($deg, $args1, $args2);
+    background: -moz-linear-gradient($deg, $args1, $args2);
+    background: -o-linear-gradient($deg, $args1, $args2);
+    background: -ms-linear-gradient($deg, $args1, $args2);
+    background: linear-gradient($deg, $args1, $args2);
+}
+
+@mixin filter($filter) {
+    -webkit-filter: $filter;
+    -moz-filter: $filter;
+    -ms-filter: $filter;
+    -o-filter: $filter;
+    filter: $filter;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin transform-origin($value) {
+    -webkit-transform-origin: $value;
+    -moz-transform-origin: $value;
+    -ms-transform-origin: $value;
+    -o-transform-origin: $value;
+    transform-origin: $value;
+}
+
+@mixin animation ($args) {
+    -webkit-animation: $args;
+    -moz-animation: $args;
+    -o-animation: $args;
+    animation: $args;
+}
+
+/* Medium Layout: 1280px */
+@mixin medium {
+    @media (min-width: 992px) and (max-width: 1400px) {
+        @content;
+    }
+}
+
+/* Tablet Layout: 768px */
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+/* Mobile Layout: 320px */
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+/* Wide Mobile Layout: 480px */
+@mixin wide-mobile {
+    @media (min-width: 480px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin cmq ($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}

@@ -93,18 +93,6 @@ export class NavBar extends Component {
                 <Link
                   activeClass="active"
                   className="nav-link js-scroll-trigger"
-                  to="download"
-                  spy={true}
-                  smooth="eastInOutQuart"
-                  duration={1000}
-                >
-                  Download
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  activeClass="active"
-                  className="nav-link js-scroll-trigger"
                   to="features"
                   spy={true}
                   smooth="easeInOutQuart"
@@ -123,6 +111,42 @@ export class NavBar extends Component {
                   duration={1000}
                 >
                   Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link js-scroll-trigger"
+                  to="download"
+                  spy={true}
+                  smooth="eastInOutQuart"
+                  duration={1000}
+                >
+                  Sign in
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link js-scroll-trigger"
+                  to="download"
+                  spy={true}
+                  smooth="eastInOutQuart"
+                  duration={1000}
+                >
+                  Sign up
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link js-scroll-trigger"
+                  to="download"
+                  spy={true}
+                  smooth="eastInOutQuart"
+                  duration={1000}
+                >
+                  Download App
                 </Link>
               </li>
             </ul>
