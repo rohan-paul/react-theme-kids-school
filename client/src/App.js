@@ -8,6 +8,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import TopSection from "./Components/TopSection/TopSection";
 import Download from "./Components/Download/Download";
 import Features from "./Components/Features/Features";
+import Login from "./Components/Login/Login";
 import { ElevatorSpeechComp } from "./Components/ElevatorSpeechComp/ElevatorSpeechComp";
 import NotFound from "./Components/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
@@ -66,6 +67,7 @@ class App extends Component {
                     </div>
                   )}
                 />
+                <Route exact path="/login" component={Login} />
                 <Route component={NotFound} />
               </Switch>
             </div>

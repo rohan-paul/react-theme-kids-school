@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import history from "../../history";
 import "./style.css";
 import * as Scroll from "react-scroll";
 import { Link, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "@material-ui/core/Button";
 
 export class NavBar extends Component {
   constructor(props) {
@@ -25,10 +27,10 @@ export class NavBar extends Component {
     scrollSpy.update();
   }
 
-  componentWillUnmount() {
-    Events.scrollEvents.remove("begin");
-    Events.scrollEvents.remove("end");
-  }
+  //   componentWillUnmount() {
+  //     Events.scrollEvents.remove("begin");
+  //     Events.scrollEvents.remove("end");
+  //   }
 
   scrollToTop = () => {
     scroll.scrollToTop();
@@ -51,6 +53,11 @@ export class NavBar extends Component {
         menuShow: false
       });
     }
+  };
+
+  handleScroll = e => {
+    e.preventDefault();
+    history.push("/login");
   };
 
   render() {
@@ -98,7 +105,7 @@ export class NavBar extends Component {
                   smooth="easeInOutQuart"
                   duration={1000}
                 >
-                  Features
+                  What we provide
                 </Link>
               </li>
               <li className="nav-item">
@@ -114,22 +121,13 @@ export class NavBar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  activeClass="active"
-                  className="nav-link js-scroll-trigger"
-                  to="download"
-                  spy={true}
-                  smooth="eastInOutQuart"
-                  duration={1000}
-                >
-                  Sign in
-                </Link>
+                <Button onClick={this.handleScroll}>Login</Button>
               </li>
               <li className="nav-item">
                 <Link
                   activeClass="active"
                   className="nav-link js-scroll-trigger"
-                  to="download"
+                  to="login"
                   spy={true}
                   smooth="eastInOutQuart"
                   duration={1000}
@@ -223,4 +221,15 @@ scrollToTop() {
   }
 With this, you should be able to scroll down on the page, click the logo in the navbar, and be taken back to the top of the page
 
+*/
+
+/*
+
+ <a
+                  onClick={this.handleScroll}
+                  className="navbar-brand js-scroll-trigger"
+                  href="/login"
+                >
+                  Login
+                </a>
 */

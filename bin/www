@@ -3,8 +3,8 @@
 /**
  * Module dependencies.
  */
-
-var app = require('../app');
+require('dotenv').config()
+var app = require('../server');
 var debug = require('debug')('1-st-theme:server');
 var http = require('http');
 

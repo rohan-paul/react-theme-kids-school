@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./_footer.scss";
 
 export class Footer extends Component {
@@ -9,19 +10,19 @@ export class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-2 col-md-6 single-footer-widget">
-                <h4>Top Products</h4>
+                <h4>Top Achievements</h4>
                 <ul>
                   <li>
-                    <a href="#">Managed Website</a>
+                    <Link to="/">School's online services</Link>
                   </li>
                   <li>
-                    <a href="#">Manage Reputation</a>
+                    <Link to="/">Student awards</Link>
                   </li>
                   <li>
-                    <a href="#">Power Tools</a>
+                    <Link to="/">Online Tools</Link>
                   </li>
                   <li>
-                    <a href="#">Marketing Service</a>
+                    <Link to="/">Student Service</Link>
                   </li>
                 </ul>
               </div>
@@ -29,33 +30,33 @@ export class Footer extends Component {
                 <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <a href="#">Jobs</a>
+                    <Link to="/">Games</Link>
                   </li>
                   <li>
-                    <a href="#">Brand Assets</a>
+                    <Link to="/">School Assets</Link>
                   </li>
                   <li>
-                    <a href="#">Investor Relations</a>
+                    <Link to="/">Sponsors</Link>
                   </li>
                   <li>
-                    <a href="#">Terms of Service</a>
+                    <Link to="/">Terms of Service</Link>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-2 col-md-6 single-footer-widget">
-                <h4>Features</h4>
+                <h4>Our previous Year</h4>
                 <ul>
                   <li>
-                    <a href="#">Jobs</a>
+                    <Link to="/">Games</Link>
                   </li>
                   <li>
-                    <a href="#">Brand Assets</a>
+                    <Link to="/">School Assets</Link>
                   </li>
                   <li>
-                    <a href="#">Investor Relations</a>
+                    <Link to="/">Sponsors</Link>
                   </li>
                   <li>
-                    <a href="#">Terms of Service</a>
+                    <Link to="/">Terms of Service</Link>
                   </li>
                 </ul>
               </div>
@@ -63,16 +64,16 @@ export class Footer extends Component {
                 <h4>Resources</h4>
                 <ul>
                   <li>
-                    <a href="#">Guides</a>
+                    <Link to="/">Security Measures</Link>
                   </li>
                   <li>
-                    <a href="#">Research</a>
+                    <Link to="/">What Parents say about us</Link>
                   </li>
                   <li>
-                    <a href="#">Experts</a>
+                    <Link to="/">Teachers</Link>
                   </li>
                   <li>
-                    <a href="#">Agencies</a>
+                    <Link to="/">Alumni</Link>
                   </li>
                 </ul>
               </div>
@@ -80,12 +81,7 @@ export class Footer extends Component {
                 <h4>Newsletter</h4>
                 <p>You can trust us. we only send promo offers,</p>
                 <div className="form-wrap" id="mc_embed_signup">
-                  <form
-                    target="_blank"
-                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
-                    method="get"
-                    className="form-inline"
-                  >
+                  <form target="_blank" method="get" className="form-inline">
                     <input
                       className="form-control"
                       name="EMAIL"
@@ -113,23 +109,23 @@ export class Footer extends Component {
             </div>
             <div className="footer-bottom row align-items-center">
               <p className="footer-text m-0 col-lg-8 col-md-12">
-                Copyright © All rights reserved | This template is made with
+                Copyright © | This template is made with
                 {" React "}
                 <i className="fa fa-heart-o" aria-hidden="true" />{" "}
               </p>
               <div className="col-lg-4 col-md-12 footer-social">
-                <a href="#">
+                <Link to="/">
                   <i className="fa fa-facebook" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/">
                   <i className="fa fa-twitter" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/">
                   <i className="fa fa-dribbble" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/">
                   <i className="fa fa-behance" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

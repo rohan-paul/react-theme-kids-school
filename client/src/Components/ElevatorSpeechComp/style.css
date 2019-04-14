@@ -1,7 +1,6 @@
 /* Two doted selector without separation means  - elements that has both 'section' and 'cta' eg: class="section cts" */
 section.cta {
     position: relative;
-    padding: 250px 0;
     background-image: url("../../Assets/Images/bg-cta.jpg");
     background-position: center;
     -webkit-background-size: cover;

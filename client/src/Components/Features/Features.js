@@ -26,20 +26,21 @@ export class Features extends Component {
                   <div className="col-lg-6">
                     <div className="feature-item">
                       <i className="icon-screen-smartphone text-primary" />
-                      <h3>Device Mockups</h3>
+                      <h3>We love technology</h3>
                       <p className="text-muted">
-                        Ready to use HTML/CSS device mockups, no Photoshop
-                        required!
+                        Out mobile app, is always updated with your kids
+                        progress and for many other information like
+                        home-assignments
                       </p>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="feature-item">
                       <i className="icon-camera text-primary" />
-                      <h3>Flexible Use</h3>
+                      <h3>Always on</h3>
                       <p className="text-muted">
-                        Put an image, video, animation, or anything else in the
-                        screen!
+                        We provide video chatting facility between students and
+                        parents at the time when needed
                       </p>
                     </div>
                   </div>
@@ -48,20 +49,20 @@ export class Features extends Component {
                   <div className="col-lg-6">
                     <div className="feature-item">
                       <i className="icon-present text-primary" />
-                      <h3>Free to Use</h3>
+                      <h3>Gifts for new students</h3>
                       <p className="text-muted">
-                        As always, this theme is free to download and use for
-                        any purpose!
+                        We welcome our new students with lots of gift an
+                        exciting events
                       </p>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="feature-item">
                       <i className="icon-lock-open text-primary" />
-                      <h3>Open Source</h3>
+                      <h3>Unlock the Future</h3>
                       <p className="text-muted">
-                        Since this theme is MIT licensed, you can use it
-                        commercially!
+                        We prepare our students right from day zero to make them
+                        ready for the next phase of their life
                       </p>
                     </div>
                   </div>

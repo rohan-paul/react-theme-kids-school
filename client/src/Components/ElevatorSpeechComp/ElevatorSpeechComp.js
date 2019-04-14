@@ -9,9 +9,9 @@ export const ElevatorSpeechComp = props => {
       <div className="cta-content">
         <div className="container">
           <h2>
-            Time to enter into.
+            Time to enter into the
             <br />
-            Open Wild World of Education
+            Exciting World of Education
           </h2>
           <a
             href="#contact"
