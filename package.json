@@ -10,7 +10,7 @@
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
         "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+        "heroku-postbuild": "cd client && npm install && npm run build"
     },
     "dependencies": {
         "babel-eslint": "^9.0.0",
