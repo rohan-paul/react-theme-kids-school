@@ -22,6 +22,7 @@
         "body-parser": "^1.18.3",
         "concurrently": "^4.1.0",
         "cookie-parser": "~1.4.3",
+        "cors": "^2.8.5",
         "debug": "~2.6.9",
         "dotenv": "^6.2.0",
         "eslint": "5.12.0",

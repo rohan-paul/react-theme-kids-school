@@ -3,6 +3,7 @@ const fs = require("fs");
 
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const path = require("path");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
@@ -66,11 +67,11 @@ app.use(
 );
 
 // make the '/api/auth' browser url route to go to auth.js route file
-app.use("/api/auth", auth);
+app.use("/api/auth", cors(), auth);
 
 // Only now, AFTER the above /api/ routes, the "catchall" handler routes: for any request that doesn't match any route after "/" below and send back React's index.html file.
 // Note, this 'catchall" route MUST be put after the above two /api/ routes. Otherwise those api routes will never be hit
-app.get("/*", (req, res) => {
+app.get("/*", cors(), (req, res) => {
   res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
