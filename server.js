@@ -80,7 +80,7 @@ app.use((err, req, res, next) => {
   res.status(422).send({ error: err._message });
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log(`Express server listening on ${port} `);
