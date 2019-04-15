@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "nodemon server.js",
-        "server": "SET NODE_ENV=dev & nodemon index.js",
+        "server": "nodemon server.js",
         "client-install": "npm start --prefix client",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
