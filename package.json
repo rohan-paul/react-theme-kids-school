@@ -5,7 +5,7 @@
     "scripts": {
         "start": "nodemon server.js",
         "server": "nodemon server.js",
-        "client-install": "npm start --prefix client",
+        "client-install": "npm install --prefix client",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
