@@ -2,6 +2,9 @@
     "name": "1-st-theme",
     "version": "0.0.0",
     "private": true,
+    "engines": {
+        "node": "10.15.3"
+    },
     "scripts": {
         "start": "nodemon server.js",
         "server": "nodemon server.js",
