@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./_footer.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FaceBook from "./Icons/facebook-logo-button.svg";
+import Twitter from "./Icons/twitter.svg";
 
 export class Footer extends Component {
   render() {
@@ -115,16 +118,18 @@ export class Footer extends Component {
               </p>
               <div className="col-lg-4 col-md-12 footer-social">
                 <Link to="/">
-                  <i className="fa fa-facebook" />
+                  <img
+                    src={FaceBook}
+                    style={{ height: 40, width: 40, paddingLeft: "1px" }}
+                    alt=""
+                  />
                 </Link>
                 <Link to="/">
-                  <i className="fa fa-twitter" />
-                </Link>
-                <Link to="/">
-                  <i className="fa fa-dribbble" />
-                </Link>
-                <Link to="/">
-                  <i className="fa fa-behance" />
+                  <img
+                    src={Twitter}
+                    style={{ height: 40, width: 40, paddingLeft: "1px" }}
+                    alt=""
+                  />
                 </Link>
               </div>
             </div>

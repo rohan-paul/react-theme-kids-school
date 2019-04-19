@@ -14,6 +14,7 @@ import GalleryPhotos from "./Components/Gallery/GalleryPhotos";
 import { ElevatorSpeechComp } from "./Components/ElevatorSpeechComp/ElevatorSpeechComp";
 import NotFound from "./Components/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBars,
@@ -23,13 +24,15 @@ import {
   faLightbulb,
   faGraduationCap
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 library.add(
   faBars,
   faMobileAlt,
   faChild,
   faDesktop,
   faLightbulb,
-  faGraduationCap
+  faGraduationCap,
+  faFacebookF
 );
 
 class App extends Component {

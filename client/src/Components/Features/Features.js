@@ -64,7 +64,7 @@ export class Features extends Component {
                       <FontAwesomeIcon
                         icon="lightbulb"
                         size="6x"
-                        color="black"
+                        color="pink"
                       />
                       <h3>Unlock the Future</h3>
                       <p className="text-muted">

@@ -5,6 +5,7 @@
     "proxy": "http://localhost:5000",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.14",
+        "@fortawesome/free-brands-svg-icons": "^5.8.1",
         "@fortawesome/free-solid-svg-icons": "^5.7.1",
         "@fortawesome/react-fontawesome": "^0.1.4",
         "@material-ui/core": "^3.9.3",
@@ -24,15 +25,15 @@
         "prop-types": "^15.6.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
+        "react-images": "^0.5.19",
         "react-material-ui-form-validator": "^2.0.7",
         "react-particles-js": "^2.5.1",
+        "react-photo-gallery": "^6.3.4",
         "react-router-dom": "^5.0.0",
         "react-scripts": "2.1.8",
         "react-scroll": "^1.7.11",
-        "simple-line-icons": "^2.4.1",
-        "react-images": "^0.5.19",
-        "react-photo-gallery": "^6.3.4",
-        "react-sortable-hoc": "^1.8.3"
+        "react-sortable-hoc": "^1.8.3",
+        "simple-line-icons": "^2.4.1"
     },
     "scripts": {
         "start": "react-scripts start",
