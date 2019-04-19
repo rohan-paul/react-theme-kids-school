@@ -55,7 +55,7 @@ export class NavBar extends Component {
     }
   };
 
-  handleScroll = e => {
+  nevigateToLogin = e => {
     e.preventDefault();
     history.push("/login");
   };
@@ -121,7 +121,12 @@ export class NavBar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Button onClick={this.handleScroll}>Login</Button>
+                <Button
+                  style={{ fontSize: "18px" }}
+                  onClick={this.nevigateToLogin}
+                >
+                  Login
+                </Button>
               </li>
               <li className="nav-item">
                 <Link
@@ -174,7 +179,7 @@ You can create a navbar using classes .navbar with .navbar-expand-* and the cont
 2> Explanation on the react-scroll package from - https://scotch.io/tutorials/implementing-smooth-scrolling-in-react
 
 - activeClass - class applied when element is reached
-- to - target to scroll to
+- to - target to scroll to. So the way the target is determined is that the 'id' of that Component should match the string that I am assigning the 'to' field to. So if < to="download" > then the Download component should have id="download"
 - spy - make Link selected when scroll is at its targets position
 - smooth - animate the scrolling
 - offset - scroll additional px (like padding)

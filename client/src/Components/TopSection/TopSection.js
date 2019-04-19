@@ -14,9 +14,9 @@ export class TopSection extends Component {
               <div className="col-lg-5 my-auto">
                 <div className="header-content mx-auto">
                   <h1 className="mb-5" style={{ fontWeight: 200 }}>
-                    Tatanagar International School is the school of the new age
-                    where we provide the perfect foundation to the young kids
-                    preparing them for the next phase of their life!
+                    At Tatanagar International School we provide the perfect
+                    foundation to the young kids preparing them for the next
+                    phase of their life!
                   </h1>
                   <a
                     href="#download"

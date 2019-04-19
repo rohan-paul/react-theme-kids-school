@@ -31,8 +31,6 @@ class ForgotPasswordEmail extends Component {
     });
   };
 
-  intervalID = 0;
-
   closeNewItemConfirmSnackbar = () => {
     this.setState({ openNewItemAddedConfirmSnackbar: false });
   };
@@ -40,54 +38,6 @@ class ForgotPasswordEmail extends Component {
   closeEmptyFieldSnackbar = () => {
     this.setState({ openEmptyTextFieldSnackbar: false });
   };
-
-  // this function will both close the modal on clicking the "View or Download" button and also post Visitor data to backend API and update mongodb record for that document model
-  sendForgotPasswordLink = () => {
-    const { email } = this.state;
-    if (email !== "") {
-      axios
-        .post("/api/forgot-password", {
-          email
-        })
-        .then(() => {
-          this.setState({
-            open: false,
-            openNewItemAddedConfirmSnackbar: true,
-            resetPasswordConfirmation: "",
-            emailEnteredNotRegisteredInSystem: "",
-            vertical: "top",
-            horizontal: "center"
-          });
-        })
-        .catch(error => {
-          if (error.response.status === 404) {
-            this.setState(
-              {
-                open: false,
-                openNewItemAddedConfirmSnackbar: true,
-                sendEmailConfirmationMessage: "",
-                vertical: "top",
-                horizontal: "center"
-              },
-              () => {
-                this.intervalID = setTimeout(() => {
-                  this.props.closeForgotPasswordEmailComp();
-                }, 2000);
-              }
-            );
-          } else {
-            alert("Oops something wrong happened, please try again");
-          }
-        });
-    } else {
-      this.setState({ openEmptyTextFieldSnackbar: true });
-    }
-  };
-
-  /* But when we do setTimeout or setInterval in our React components, it is not dependent on or linked with our React class like normally expected (i.e. will NOT stop automatically when component unmounts ). It will keep on running after its specified condition unless or until I cancel it’s subscription. */
-  componentWillUnmount() {
-    clearTimeout(this.intervalId);
-  }
 
   handleCancel = () => {
     this.setState({ open: false }, () => {
@@ -161,7 +111,6 @@ class ForgotPasswordEmail extends Component {
               Cancel
             </Button>
             <Button
-              onClick={this.sendForgotPasswordLink}
               color="primary"
               variant="contained"
               disabled={email === "" || validate(this.state.email)}

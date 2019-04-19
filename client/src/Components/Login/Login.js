@@ -18,7 +18,7 @@ import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import green from "@material-ui/core/colors/green";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import Image from "./school-2.jpg";
+import Image from "./school.svg";
 import ForgotPasswordEmail from "./ForgotPasswordEmail";
 import PasswordField from "material-ui-password-field";
 import validate from "./UtilFunctions/validateEmail";
@@ -37,16 +37,14 @@ const styles = {
     maxHeight: "1200px"
   },
   media: {
-    height: 100,
-    width: 100,
-    margin: "0px auto 0px auto"
+    objectFit: "cover"
   },
   title: {
     width: 85,
     margin: "0 auto 0px auto",
     padding: "0px",
     fontSize: "35px",
-    color: "white"
+    color: "black"
   },
   checkBoxSizeIcon: {
     width: 35,
@@ -152,9 +150,9 @@ class Login extends Component {
 
     if (redirectToReferrer) {
       if (redirectTo === "school-operator") {
-        return <Redirect to={"/dashboard/imports"} />;
+        return <Redirect to={"/"} />;
       } else {
-        return <Redirect to={"/dashboard/onBoardPort"} />;
+        return <Redirect to={"/"} />;
       }
     }
 
@@ -185,24 +183,20 @@ class Login extends Component {
           )}
           <Paper className={classes.loginPaper}>
             <Card className={classes.card}>
-              <div
-                style={{
-                  backgroundColor: "rgb(0,188,212)",
-                  padding: "20px"
-                }}
-              >
-                <CardMedia
-                  className={classes.media}
-                  image={require("./school.jpg")}
-                  style={styles.media}
-                />
+              <CardMedia
+                component="img"
+                alt="Contemplative Reptile"
+                className={classes.media}
+                height="140"
+                image={require("./LoginLogo.svg")}
+              />
 
-                <CardHeader
-                  disableTypography={true}
-                  className={classes.title}
-                  title="Login"
-                />
-              </div>
+              <CardHeader
+                disableTypography={true}
+                className={classes.title}
+                title="Login"
+              />
+
               <CardContent>
                 <ValidatorForm
                   ref="form"
@@ -327,7 +321,7 @@ class Login extends Component {
             </div>
 
             <a
-              href="https://www.volteo.com/"
+              href="#"
               rel="noopener noreferrer"
               target="_blank"
               className={classes.paperFooter}
@@ -346,31 +340,3 @@ Login.propTypes = {
 };
 
 export default withStyles(styles)(Login);
-
-/*
-1> To test loggin in with Postman fire a POST request in http://localhost:3000/api/auth/login
-
-{
-"email": "abc@live.in",
-"password":"abc"
-}
-
-2> When the Login request is successful, my then() callback (inside Login.js function ) will receive a response object with the following properties:
-
-data: the payload returned from the server. By default, Axios expects JSON and will parse this back into a JavaScript object for me.
-
-status: the HTTP code returned from the server.
-
-statusText: the HTTP status message returned by the server.
-
-headers: all the headers sent back by the server. In this app, I will later use getToken(req.headers) to get the actual token saved in localStorage of the browser.
-
-config: the original request configuration.
-
-request: the actual XMLHttpRequest object (when running in a browser).
-
-3> Login lates (25Mar2019) -
-rohanpaul2@gmail.com
-abcde
-
-*/

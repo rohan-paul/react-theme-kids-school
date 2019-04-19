@@ -9,6 +9,8 @@ import TopSection from "./Components/TopSection/TopSection";
 import Download from "./Components/Download/Download";
 import Features from "./Components/Features/Features";
 import Login from "./Components/Login/Login";
+import Contacts from "./Components/Contacts/Contacts";
+import Gallery from "./Components/Gallery/Gallery";
 import { ElevatorSpeechComp } from "./Components/ElevatorSpeechComp/ElevatorSpeechComp";
 import NotFound from "./Components/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
@@ -62,7 +64,9 @@ class App extends Component {
                       <TopSection />
                       <Features />
                       <ElevatorSpeechComp />
+                      <Gallery />
                       <Download />
+                      <Contacts />
                       <Footer />
                     </div>
                   )}

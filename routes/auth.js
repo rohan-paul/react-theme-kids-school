@@ -99,15 +99,16 @@ The console-logged 'hash' value is the one, that I have to save in Mongo
 2> Second,  I manually inserted an user, into mongodb 'users' collection with the below details
 
 db.users.insert({
-	"email": "rohanpaul2@gmail.com",
-	"password" : "$2b$10$xL6RRh9/WHI5Jlartab32.7ED.y3aOSLQ9teprLD.VBe9hgqaYN.W",
-	"firstName": "rohan",
-    "lastName": "paul",
-	"loginAttempts": "2",
-	"userType":"Port",
-	"images": {
-        "original_image": "http://smartport.ap.gov.in:9000/smartport-profile/c56bb560-b1a5-11e7-8c59-e5b9b711918dvessel-placeholder.png"
-    }
+    "status" : "Registered",
+    "userType" : "school-admin",
+    "password_reset_flag" : false,
+    "loginAttempts" : NumberInt(0),
+    "username" : "abc@live.in",
+    "email" : "abc@live.in",
+    "password" : "$2b$10$xL6RRh9/WHI5Jlartab32.7ED.y3aOSLQ9teprLD.VBe9hgqaYN.W",
+    "name" : "Rohan Paul",
+    "firstName" : "Rohan-Admin",
+    "LastName" : "Paul"
 })
 
 3> Third - Then from postman I send a POST request to < http://localhost:3000/api/auth/login >

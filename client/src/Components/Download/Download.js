@@ -34,5 +34,3 @@ export class Download extends Component {
 }
 
 export default Download;
-
-//
