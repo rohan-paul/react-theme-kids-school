@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import "simple-line-icons/css/simple-line-icons.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import demoScreen1 from "../../Assets/Images/sunset.png";
 
 export class Features extends Component {
@@ -10,9 +11,7 @@ export class Features extends Component {
         <div className="container">
           <div className="section-heading text-center">
             <h2>Lots of Learning with Plenty of Fun</h2>
-            <p className="text-muted">
-              Check out what you can do with this app theme!
-            </p>
+
             <hr />
           </div>
           <div className="row">
@@ -25,7 +24,7 @@ export class Features extends Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="feature-item">
-                      <i className="icon-screen-smartphone text-primary" />
+                      <FontAwesomeIcon icon="desktop" size="6x" color="black" />
                       <h3>We love technology</h3>
                       <p className="text-muted">
                         Out mobile app, is always updated with your kids
@@ -36,7 +35,7 @@ export class Features extends Component {
                   </div>
                   <div className="col-lg-6">
                     <div className="feature-item">
-                      <i className="icon-camera text-primary" />
+                      <FontAwesomeIcon icon="child" size="6x" color="black" />
                       <h3>Always on</h3>
                       <p className="text-muted">
                         We provide video chatting facility between students and
@@ -48,7 +47,11 @@ export class Features extends Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="feature-item">
-                      <i className="icon-present text-primary" />
+                      <FontAwesomeIcon
+                        icon="graduation-cap"
+                        size="6x"
+                        color="black"
+                      />
                       <h3>Gifts for new students</h3>
                       <p className="text-muted">
                         We welcome our new students with lots of gift an
@@ -58,7 +61,11 @@ export class Features extends Component {
                   </div>
                   <div className="col-lg-6">
                     <div className="feature-item">
-                      <i className="icon-lock-open text-primary" />
+                      <FontAwesomeIcon
+                        icon="lightbulb"
+                        size="6x"
+                        color="black"
+                      />
                       <h3>Unlock the Future</h3>
                       <p className="text-muted">
                         We prepare our students right from day zero to make them

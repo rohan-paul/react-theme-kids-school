@@ -112,6 +112,18 @@ export class NavBar extends Component {
                 <Link
                   activeClass="active"
                   className="nav-link js-scroll-trigger"
+                  to="gallery"
+                  spy={true}
+                  smooth="easeInOutQuart"
+                  duration={1000}
+                >
+                  Gallery
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link js-scroll-trigger"
                   to="contact"
                   spy={true}
                   smooth="easeInOutQuart"
@@ -128,17 +140,60 @@ export class NavBar extends Component {
                   Login
                 </Button>
               </li>
-              <li className="nav-item">
-                <Link
-                  activeClass="active"
-                  className="nav-link js-scroll-trigger"
-                  to="login"
-                  spy={true}
-                  smooth="eastInOutQuart"
-                  duration={1000}
-                >
-                  Sign up
-                </Link>
+              <li>
+                <header className="site-navbar">
+                  <nav className="site-navigation ">
+                    <ul className="site-menu mx-auto d-none d-lg-block">
+                      <li
+                        className="has-children"
+                        style={{
+                          fontSize: "18px",
+                          color: "black",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        School Services
+                        <ul className="dropdown">
+                          <li>
+                            <Link to="/#">For Parents</Link>
+                          </li>
+                          <li>
+                            <Link to="/#">Principle Desk</Link>
+                          </li>
+                          <li>
+                            <Link to="/#">For Students</Link>
+                          </li>
+                          <li>
+                            <Link to="/#">Sporting Events</Link>
+                          </li>
+                          <li>
+                            <Link to="/#">Awards</Link>
+                          </li>
+                          <li>
+                            <Link to="/#">Sports</Link>
+                          </li>
+                          <li>
+                            <Link to="/#">Recents Evnts</Link>
+                          </li>
+                          <li className="has-children">
+                            <Link to="/#">Sub Menu</Link>
+                            <ul className="dropdown">
+                              <li>
+                                <Link to="/#">Menu One</Link>
+                              </li>
+                              <li>
+                                <Link to="/#">Menu Two</Link>
+                              </li>
+                              <li>
+                                <Link to="/#">Menu Three</Link>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </header>
               </li>
               <li className="nav-item">
                 <Link
@@ -226,15 +281,4 @@ scrollToTop() {
   }
 With this, you should be able to scroll down on the page, click the logo in the navbar, and be taken back to the top of the page
 
-*/
-
-/*
-
- <a
-                  onClick={this.handleScroll}
-                  className="navbar-brand js-scroll-trigger"
-                  href="/login"
-                >
-                  Login
-                </a>
 */

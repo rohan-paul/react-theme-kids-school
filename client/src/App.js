@@ -10,13 +10,27 @@ import Download from "./Components/Download/Download";
 import Features from "./Components/Features/Features";
 import Login from "./Components/Login/Login";
 import Contacts from "./Components/Contacts/Contacts";
-import Gallery from "./Components/Gallery/Gallery";
+import GalleryPhotos from "./Components/Gallery/GalleryPhotos";
 import { ElevatorSpeechComp } from "./Components/ElevatorSpeechComp/ElevatorSpeechComp";
 import NotFound from "./Components/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-library.add(faBars, faMobileAlt);
+import {
+  faBars,
+  faMobileAlt,
+  faChild,
+  faDesktop,
+  faLightbulb,
+  faGraduationCap
+} from "@fortawesome/free-solid-svg-icons";
+library.add(
+  faBars,
+  faMobileAlt,
+  faChild,
+  faDesktop,
+  faLightbulb,
+  faGraduationCap
+);
 
 class App extends Component {
   constructor(props) {
@@ -64,7 +78,7 @@ class App extends Component {
                       <TopSection />
                       <Features />
                       <ElevatorSpeechComp />
-                      <Gallery />
+                      <GalleryPhotos />
                       <Download />
                       <Contacts />
                       <Footer />

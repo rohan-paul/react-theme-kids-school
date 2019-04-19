@@ -29,7 +29,10 @@
         "react-router-dom": "^5.0.0",
         "react-scripts": "2.1.8",
         "react-scroll": "^1.7.11",
-        "simple-line-icons": "^2.4.1"
+        "simple-line-icons": "^2.4.1",
+        "react-images": "^0.5.19",
+        "react-photo-gallery": "^6.3.4",
+        "react-sortable-hoc": "^1.8.3"
     },
     "scripts": {
         "start": "react-scripts start",
