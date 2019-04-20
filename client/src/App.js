@@ -8,6 +8,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import TopSection from "./Components/TopSection/TopSection";
 import Download from "./Components/Download/Download";
 import Features from "./Components/Features/Features";
+import Performance from "./Components/Performance/Performance";
 import Login from "./Components/Login/Login";
 import Contacts from "./Components/Contacts/Contacts";
 import GalleryPhotos from "./Components/Gallery/GalleryPhotos";
@@ -82,6 +83,7 @@ class App extends Component {
                       <Features />
                       <ElevatorSpeechComp />
                       <GalleryPhotos />
+                      <Performance />
                       <Download />
                       <Contacts />
                       <Footer />

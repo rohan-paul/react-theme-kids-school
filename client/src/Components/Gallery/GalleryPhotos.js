@@ -11,6 +11,7 @@ import img7 from "./Images/kids-7.jpg";
 import img8 from "./Images/kids-8.jpg";
 import img9 from "./Images/kids-9.jpg";
 import img10 from "./Images/kids-10.jpg";
+import img11 from "./Images/kids-11.jpg";
 
 const photos = [
   {
@@ -64,7 +65,7 @@ const photos = [
     height: 3
   },
   {
-    src: img1,
+    src: img11,
     width: 4,
     height: 3
   }
@@ -101,7 +102,14 @@ export class GalleryPhotos extends Component {
 
   render() {
     return (
-      <div id="gallery">
+      <section
+        id="gallery"
+        style={{
+          boxSizing: "border-box",
+          paddingTop: "0px",
+          paddingBottom: "0px"
+        }}
+      >
         <Gallery photos={photos} onClick={this.openLightbox} />
         <Lightbox
           images={photos}
@@ -111,7 +119,7 @@ export class GalleryPhotos extends Component {
           currentImage={this.state.currentImage}
           isOpen={this.state.lightboxIsOpen}
         />
-      </div>
+      </section>
     );
   }
 }

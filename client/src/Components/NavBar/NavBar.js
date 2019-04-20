@@ -60,6 +60,11 @@ export class NavBar extends Component {
     history.push("/login");
   };
 
+  logout = () => {
+    localStorage.removeItem("user");
+    history.push("/login");
+  };
+
   render() {
     const show = this.state.menuShow ? "show" : "";
     return (
@@ -132,14 +137,7 @@ export class NavBar extends Component {
                   Contact
                 </Link>
               </li>
-              <li className="nav-item">
-                <Button
-                  style={{ fontSize: "18px" }}
-                  onClick={this.nevigateToLogin}
-                >
-                  Login
-                </Button>
-              </li>
+
               <li>
                 <header className="site-navbar">
                   <nav className="site-navigation ">
@@ -207,6 +205,36 @@ export class NavBar extends Component {
                   Download App
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link js-scroll-trigger"
+                  to="performance"
+                  spy={true}
+                  smooth="easeInOutQuart"
+                  duration={1000}
+                >
+                  School Stats
+                </Link>
+              </li>
+              {(JSON.parse(localStorage.getItem("user")) &&
+                JSON.parse(localStorage.getItem("user")).userType) ===
+              "school-admin" ? (
+                <li className="nav-item">
+                  <Button style={{ fontSize: "18px" }} onClick={this.logout}>
+                    Logout
+                  </Button>
+                </li>
+              ) : (
+                <li className="nav-item">
+                  <Button
+                    style={{ fontSize: "18px" }}
+                    onClick={this.nevigateToLogin}
+                  >
+                    Login
+                  </Button>
+                </li>
+              )}
             </ul>
           </div>
         </div>
@@ -234,7 +262,8 @@ You can create a navbar using classes .navbar with .navbar-expand-* and the cont
 2> Explanation on the react-scroll package from - https://scotch.io/tutorials/implementing-smooth-scrolling-in-react
 
 - activeClass - class applied when element is reached
-- to - target to scroll to. So the way the target is determined is that the 'id' of that Component should match the string that I am assigning the 'to' field to. So if < to="download" > then the Download component should have id="download"
+- to - target to scroll to. So the way the target is determined is that the 'id' of that Component should match the string that I am assigning the 'to' field to. So if < to="download" > then the Download component should start with a <section></section> which has an id="download". Very Important - the Download component should be wrapped by <section></section> and NOT just a <div></div>
+
 - spy - make Link selected when scroll is at its targets position
 - smooth - animate the scrolling
 - offset - scroll additional px (like padding)
@@ -272,7 +301,6 @@ To take advantage of this, we can create an active class and add an underline to
 }
 
 Now, I should see the appropriate link is underlined.
-
 
 this package also provides some functions that can be called directly like "scrollToTop", "scrollToBottom", etc. as well as various events that you can handle. Typically, the application logo in a navbar should bring the user to the home page or the top of the current page. So, I added a click handler to the navbar brand image to call scroll the user back to the top of the page.
 
