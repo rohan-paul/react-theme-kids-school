@@ -4,24 +4,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+#### To launch this project in the local machine.
 
-### `npm start`
+First create a .env file in `./server` directory with the following details.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```js
+MONGO_DB=mongodb://localhost:27017/kids-school
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+NODE_ENV=development
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can ofcourse name your database to whatever you like (instead of kids-school)
 
-### `npm run build`
+Then - run `npm install` in both the `./server` and `./client` directories separately, to install all the npm packages for server and client respectively.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then, start mongodb service with `sudo service mongod start` and then finally run the following command from the `./server` directory
+
+- `npm run dev`
+
+Which will start both the client (port 3000) and server (port 5000) and launch the site in port 3000. Then navigate to one of the below.
+
+Then navigate to the public or the private (only for logged-in user) site
+
+The site is running at - [http://localhost:3000/dashboard](http://localhost:3000/dashboard)
