@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { Component } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import GeographicalDistribution from "./GeographicalDistribution";
