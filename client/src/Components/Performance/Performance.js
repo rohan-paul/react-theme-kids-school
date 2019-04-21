@@ -5,14 +5,7 @@ import GeographicalDistribution from "./GeographicalDistribution";
 import PieChart1 from "./PieChart1";
 import PieChart2 from "./PieChart2";
 import PieChart3 from "./PieChart3";
-
-const pieChartData = [
-  { date: 0, value: 146 },
-  { date: 1, value: 784 },
-  { date: 2, value: 723 },
-  { date: 3, value: 550 },
-  { date: 4, value: 197 }
-];
+import StackedBarchart from "./StackedBarchart";
 
 const options = {
   chart: {
@@ -49,9 +42,18 @@ export class Performance extends Component {
             <h4 style={{ paddingLeft: "93px" }}>2017</h4>
             <PieChart2 width={220} height={220} />
           </div>
-          <div style={{ paddingTop: "2%", paddingLeft: "25px" }}>
+          <div
+            style={{
+              paddingTop: "2%",
+              paddingLeft: "25px",
+              paddingRight: "35px"
+            }}
+          >
             <h4 style={{ paddingLeft: "93px" }}>2016</h4>
             <PieChart3 width={220} height={220} />
+          </div>
+          <div style={{ width: "80%" }}>
+            <StackedBarchart />
           </div>
         </div>
         <div>
