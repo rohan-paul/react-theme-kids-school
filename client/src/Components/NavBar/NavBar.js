@@ -217,6 +217,18 @@ export class NavBar extends Component {
                   School Stats
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link js-scroll-trigger"
+                  to="footer"
+                  spy={true}
+                  smooth="easeInOutQuart"
+                  duration={1000}
+                >
+                  Site Map
+                </Link>
+              </li>
               {(JSON.parse(localStorage.getItem("user")) &&
                 JSON.parse(localStorage.getItem("user")).userType) ===
               "school-admin" ? (

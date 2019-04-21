@@ -85,7 +85,7 @@ export class GeographicalDistribution extends Component {
     return (
       <div>
         <div style={{ marginLeft: "40%" }}>
-          <h2>Alumnai Community</h2>
+          <h2>Alumni Community</h2>
           <h4>Our past students are all over the world now</h4>
         </div>
         <HighchartsReact

@@ -29,15 +29,15 @@ const options = {
   series: [
     {
       name: "India",
-      data: [5, 6, 7, 7, 4]
+      data: [7, 6, 5, 4, 4]
     },
     {
       name: "Kolkata",
-      data: [1, 2, 3, 2, 2]
+      data: [2, 2, 1, 2, 3]
     },
     {
       name: "International",
-      data: [3, 4, 4, 2, 5]
+      data: [4, 3, 3, 2, 1]
     }
   ]
 };

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./_footer.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FaceBook from "./Icons/facebook-logo-button.svg";
 import Twitter from "./Icons/twitter.svg";
 
@@ -98,7 +97,7 @@ export class Footer extends Component {
                       <button className="click-btn btn btn-default text-uppercase">
                         subscribe
                       </button>
-                      <div style={{ position: "absolute", left: "-5000px" }}>
+                      <div style={{ position: "absolute", left: "-8000px" }}>
                         <input
                           name="b_36c4fd991d266f23781ded980_aefe40901a"
                           tabIndex={-1}
@@ -113,7 +112,7 @@ export class Footer extends Component {
               </div>
               <div className="footer-bottom row align-items-center">
                 <p className="footer-text m-0 col-lg-8 col-md-12">
-                  Copyright © | This template is made with
+                  Copyright © | This template is built with
                   {" React "}
                   <i className="fa fa-heart-o" aria-hidden="true" />{" "}
                 </p>

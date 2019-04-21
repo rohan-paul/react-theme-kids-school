@@ -12,11 +12,11 @@ const options = {
     type: "spline"
   },
   title: {
-    text: "Total number of students (in ,000) over the years"
+    text: "Total number of students (in hundreds) over the years"
   },
   series: [
     {
-      data: [1, 2, 1, 4, 3, 6, 6.8, 7.6, 8],
+      data: [3.6, 4, 4.8, 5.0, 5.9, 6, 6.8, 6.9, 7],
       pointStart: 2010
     }
   ]
