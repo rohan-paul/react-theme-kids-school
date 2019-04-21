@@ -2,6 +2,9 @@ import React, { Component, useEffect, useRef } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import GeographicalDistribution from "./GeographicalDistribution";
+import PieChart1 from "./PieChart1";
+import PieChart2 from "./PieChart2";
+import PieChart3 from "./PieChart3";
 
 const pieChartData = [
   { date: 0, value: 146 },
@@ -37,6 +40,18 @@ export class Performance extends Component {
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div style={{ maxWidth: "690px" }}>
             <HighchartsReact highcharts={Highcharts} options={options} />
+          </div>
+          <div style={{ paddingTop: "2%", paddingLeft: "25px" }}>
+            <h4 style={{ paddingLeft: "93px" }}>2018</h4>
+            <PieChart1 width={220} height={220} />
+          </div>
+          <div style={{ paddingTop: "2%", paddingLeft: "25px" }}>
+            <h4 style={{ paddingLeft: "93px" }}>2017</h4>
+            <PieChart2 width={220} height={220} />
+          </div>
+          <div style={{ paddingTop: "2%", paddingLeft: "25px" }}>
+            <h4 style={{ paddingLeft: "93px" }}>2016</h4>
+            <PieChart3 width={220} height={220} />
           </div>
         </div>
         <div>
