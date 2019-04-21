@@ -1,6 +1,6 @@
 <img src="site.gif">
 
-### [Only the Client Live running here](https://bloomingbud.netlify.com/)
+### [Live running here (Without backend, Only the Client)](https://bloomingbud.netlify.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
