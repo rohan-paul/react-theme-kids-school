@@ -1,9 +1,12 @@
+A Landing Page Theme (for a school website) built with React, including Login Functionality with json-web-token and Passport middleware authentication.
+
+Few other libraries used - _𝐫𝐞𝐚𝐜𝐭-𝐬𝐜𝐫𝐨𝐥𝐥_ for scrolling within the same page on mouse-click, _𝐇𝐢𝐠𝐡𝐜𝐡𝐚𝐫𝐭𝐬_ 𝐚𝐧𝐝 _𝐃𝟑.𝐣𝐬_ for charting and little bit of _𝐩𝐚𝐫𝐭𝐢𝐜𝐥𝐞.𝐣𝐬_
+
 <img src="site.gif">
 
 ### [Live running here (Without backend, Only the Client)](https://bloomingbud.netlify.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 
 #### To launch this project in the local machine.
 
@@ -22,7 +25,7 @@ Then - run `npm install` in both the `./server` and `./client` directories separ
 
 Then, start mongodb service with `sudo service mongod start` and then finally run the following command from the `./server` directory
 
-- `npm run dev`
+-   `npm run dev`
 
 Which will start both the client (port 3000) and server (port 5000) and launch the site in port 3000. Then navigate to one of the below.
 
