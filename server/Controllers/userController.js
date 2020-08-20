@@ -121,6 +121,8 @@ db.users.insert({
 
 3> Third - Then from postman I send a POST request to < http://localhost:3000/api/auth/login >
 
+Currently this is working with Mongo Atlas but not with local Mongodb in my Machine
+
 {
 	"email": "abc@live.in",
 	"password":"abc"

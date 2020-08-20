@@ -25,10 +25,27 @@ Then - run `npm install` in both the `./server` and `./client` directories separ
 
 Then, start mongodb service with `sudo service mongod start` and then finally run the following command from the `./server` directory
 
--   `npm run dev`
+- `npm run dev`
 
 Which will start both the client (port 3000) and server (port 5000) and launch the site in port 3000. Then navigate to one of the below.
 
 Then navigate to the public or the private (only for logged-in user) site
 
 The site is running at - [http://localhost:3000/dashboard](http://localhost:3000/dashboard)
+
+#### Issues in connecting to Mongo Atlas
+
+If you get the following error from MongoAtlast
+
+```
+Mongoose default connection disconnected
+error in Database (MongoDB) connections
+(node:3870) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [cluster0-shard-00-01-ylp6q.mongodb.net:27017] on first connect
+```
+
+Then just add your specific IP address to whitelist (To go to IP Whitelist view > In the Security section of the left navigation, click Network Access. The IP Whitelist tab displays.)
+
+Network Access -> IP Whitelist. Instead of clicking my current ip address, just search what's my ip on google and paste that instead.
+
+OR click on **Edit** and choose "allows access from anywhere"
+Adding the CIDR 0.0.0.0/0 allows access from anywhere. Ensure that strong credentials (username and password) are used for all database users when allowing access from anywhere.
